@@ -87,3 +87,11 @@ The PDF report documents the written analysis and findings that accompany the SQ
 5. Run `02_Attrition Analysis.sql` query by query and inspect the result sets.
 6. Recreate the dashboard from the query outputs, or connect a BI tool to the tables and build the visuals shown in `03_Dashboard.png`.
 7. Read `Attrition_Analysis_Report.pdf` for the written interpretation.
+
+##  Project Report
+
+[View HR Employee Attrition Analysis Report](./Attrition_Analysis_Report.pdf)
+
+##  Dashboard Preview
+
+![HR Analytics Dashboard](./03_Dashboard.png)

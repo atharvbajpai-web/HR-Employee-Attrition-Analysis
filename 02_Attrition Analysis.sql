@@ -47,7 +47,8 @@ order by attrition ;
 
 -- 6. Does overtime drive attrition?
 select jd.overtime, 
-	(select sum(case when attrition='yes' then 1 else 0 end)) as attrition
+	(select sum(case when attrition='yes' then 1 else 0 end)) as attrition,
+	 round(100.0 * sum(case when e.attrition = 'Yes' then 1 else 0 end) / count(*), 2) as attrition_rate_pct
 from employees as e
 join job_details as jd
 on e.employee_id = jd.employee_id
